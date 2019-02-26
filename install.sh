@@ -19,3 +19,5 @@ then
     # Comment this line below if you want general settings instead of DANS settings
     yes | cp -rf dans_settings.py ontology-mapping-chatbot/chatbot_app/local_settings.py 
 fi
+docker-compose build
+docker-compose up -d
