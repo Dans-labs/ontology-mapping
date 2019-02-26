@@ -4,6 +4,7 @@ services:
     ontology:
         build:  ontology-mapping-chatbot/
         container_name: ontology
+        privileged: true
         ports:
         - "8090:8000"
         volumes:
