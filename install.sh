@@ -16,4 +16,6 @@ then
     echo "ALLOWED_HOSTS = ['localhost', '127.0.0.1']" >> ontology-mapping-chatbot/chatbot_app/local_settings.py
     echo "Remove old data dumps"
     rm -rf ontology-mapping-chatbot/data_dumps
+    # Comment this line below if you want general settings instead of DANS settings
+    yes | cp -rf dans_settings.py ontology-mapping-chatbot/chatbot_app/local_settings.py 
 fi
