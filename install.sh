@@ -14,4 +14,6 @@ then
     cp ontology-mapping-chatbot/chatbot_app/settings.py ontology-mapping-chatbot/chatbot_app/local_settings.py
     echo "SECRET_KEY = '<SECRET_KEY>'" >> ontology-mapping-chatbot/chatbot_app/local_settings.py
     echo "ALLOWED_HOSTS = ['localhost', '127.0.0.1']" >> ontology-mapping-chatbot/chatbot_app/local_settings.py
+    echo "Remove old data dumps"
+    rm -rf ontology-mapping-chatbot/data_dumps
 fi
