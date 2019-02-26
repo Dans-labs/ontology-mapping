@@ -8,6 +8,7 @@ unzip -o data_dumps.zip
 rm data_dumps.zip
 rm -r __MACOSX/
 
+cp Dockerfile ./ontology-mapping-chatbot/
 if [ ! -f ontology-mapping-chatbot/chatbot_app/local_settings.py ]
 then
     cp ontology-mapping-chatbot/chatbot_app/settings.py ontology-mapping-chatbot/chatbot_app/local_settings.py
